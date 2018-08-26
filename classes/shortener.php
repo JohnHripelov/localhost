@@ -38,10 +38,10 @@
 		return $ret;
 	}
 	
-    //if(!filter_var($url, FILTER_VALIDATE_URL)) 
-	//if(get_headers($url, 1)){
-    // return '';
-    //}
+    if(!filter_var($url, FILTER_VALIDATE_URL)) 
+		{
+		return '';
+		}
 	
     $url = $this->db->escape_string($url);
 

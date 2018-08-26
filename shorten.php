@@ -8,7 +8,7 @@
    $url = $_POST['url'];
 
    if($code = $s->makeCode($url)) {
-    $_SESSION['feedback'] = "Shortened URL: <a href='http://localhost/test/$code'>http://localhost/test/$code</a>";
+    $_SESSION['feedback'] = "Shortened URL: <a href='http://localhost/$code'>http://localhost/$code</a>";
    } else {
     $_SESSION['feedback'] = "An error has occured. Please check your URL";
    }
