@@ -1,0 +1,5 @@
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+RewriteEngine on
+RewriteRule ^([a-z0-9]+)$ redirect.php?code=$1
